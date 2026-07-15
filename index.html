@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Text Message (SMS) Program — Clear Choice Lending Group, Inc.</title>
+<meta name="description" content="Sign up for text updates from Clear Choice Lending Group, Inc. — rate updates, loan status alerts, and appointment reminders. NMLS #2026723.">
+<style>
+:root{--navy:#0e2a47;--gold:#c9a227;--light:#f5f7fa;--text:#26313d}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,'Times New Roman',serif;color:var(--text);background:var(--light);line-height:1.6}
+header{background:var(--navy);color:#fff;padding:28px 20px;text-align:center}
+header .brand{font-size:1.6rem;font-weight:bold;letter-spacing:.5px}
+header .brand span{color:var(--gold)}
+header .tag{font-size:.85rem;opacity:.85;margin-top:4px;font-family:Arial,Helvetica,sans-serif}
+main{max-width:720px;margin:0 auto;padding:36px 20px 20px}
+h1{color:var(--navy);font-size:1.7rem;margin-bottom:14px}
+h2{color:var(--navy);font-size:1.15rem;margin:26px 0 8px}
+p{margin-bottom:12px}
+.card{background:#fff;border:1px solid #dde3ea;border-radius:10px;padding:28px;margin:22px 0;box-shadow:0 2px 8px rgba(14,42,71,.06)}
+label{display:block;font-family:Arial,Helvetica,sans-serif;font-size:.9rem;font-weight:bold;color:var(--navy);margin:14px 0 4px}
+input[type=text],input[type=tel]{width:100%;padding:11px;border:1px solid #b8c2cd;border-radius:6px;font-size:1rem}
+.consent{display:flex;gap:10px;align-items:flex-start;margin:18px 0;font-family:Arial,Helvetica,sans-serif;font-size:.85rem;color:#3c4855}
+.consent input{margin-top:3px;transform:scale(1.25)}
+button{background:var(--gold);color:var(--navy);font-weight:bold;font-size:1.05rem;border:none;border-radius:6px;padding:13px 30px;cursor:pointer;width:100%;margin-top:6px}
+button:hover{background:#b5901f}
+button:disabled{background:#d8d2bd;cursor:not-allowed}
+.msg{font-family:Arial,Helvetica,sans-serif;font-size:.95rem;margin-top:14px;padding:12px;border-radius:6px;display:none}
+.msg.ok{display:block;background:#e7f5ec;color:#1c6b3c;border:1px solid #bfe3cc}
+.msg.err{display:block;background:#fdecec;color:#9c2b2b;border:1px solid #f2c5c5}
+.fine{font-family:Arial,Helvetica,sans-serif;font-size:.78rem;color:#5a6673;margin-top:10px}
+ul{margin:0 0 12px 22px}
+footer{background:var(--navy);color:#cfd8e3;font-family:Arial,Helvetica,sans-serif;font-size:.78rem;text-align:center;padding:26px 20px;margin-top:40px;line-height:1.7}
+footer a{color:var(--gold);text-decoration:none}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">Clear Choice <span>Lending Group</span></div>
+  <div class="tag">Licensed Mortgage Broker &middot; NMLS #2026723 &middot; Sunrise, Florida</div>
+</header>
+<main>
+  <h1>Text Message (SMS) Program</h1>
+  <p>Clear Choice Lending Group, Inc. offers an optional text message program so you can receive mortgage rate updates, loan application status alerts, document reminders, and appointment reminders by SMS.</p>
+
+  <h2>Program details</h2>
+  <ul>
+    <li><strong>Program name:</strong> Clear Choice Lending Group SMS Alerts</li>
+    <li><strong>Message frequency:</strong> varies (typically 2&ndash;6 messages per month)</li>
+    <li><strong>Message &amp; data rates may apply.</strong></li>
+    <li><strong>Opt out any time:</strong> reply <strong>STOP</strong> to cancel</li>
+    <li><strong>Need help?</strong> Reply <strong>HELP</strong> or call <a href="tel:+18773222992">(877) 322-2992</a></li>
+    <li>Consent is <strong>not</strong> a condition of purchasing any property, goods, or services.</li>
+  </ul>
+
+  <div class="card">
+    <h2 style="margin-top:0">Sign up for text updates</h2>
+    <form id="optinForm" novalidate>
+      <label for="name">Full name</label>
+      <input type="text" id="name" name="name" autocomplete="name" required>
+      <label for="phone">Mobile phone number</label>
+      <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555" autocomplete="tel" required>
+      <div class="consent">
+        <input type="checkbox" id="consent" name="consent" value="yes">
+        <label for="consent" style="margin:0;font-weight:normal">By checking this box, I agree to receive recurring automated marketing and informational text messages (e.g., rate updates, loan status alerts, appointment reminders) from Clear Choice Lending Group, Inc. at the mobile number I provided. Consent is not a condition of purchase. Message frequency varies. Msg &amp; data rates may apply. Reply STOP to opt out or HELP for help. See our <a href="/privacy.html">Privacy Policy</a> and <a href="/terms.html">Terms of Service</a>.</label>
+      </div>
+      <button type="submit" id="submitBtn">Subscribe to SMS Alerts</button>
+      <div class="msg" id="formMsg"></div>
+      <p class="fine">Your mobile number and SMS consent are used only by Clear Choice Lending Group, Inc. Mobile information and text messaging opt-in data will never be shared with or sold to third parties or affiliates for marketing or promotional purposes.</p>
+    </form>
+  </div>
+</main>
+<footer>
+  Clear Choice Lending Group, Inc. &middot; NMLS #2026723<br>
+  440 Sawgrass Corporate Parkway, Suite 206, Sunrise, FL 33325 &middot; (877) 322-2992<br>
+  <a href="/privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="/terms.html">Terms of Service</a> &nbsp;|&nbsp; <a href="https://clearchoicelending.group">clearchoicelending.group</a> &nbsp;|&nbsp; <a href="https://www.nmlsconsumeraccess.org/EntityDetails.aspx/COMPANY/2026723" rel="noopener">NMLS Consumer Access</a><br>
+  Equal Housing Opportunity. &copy; 2026 Clear Choice Lending Group, Inc. All rights reserved.
+</footer>
+<script>
+document.getElementById('optinForm').addEventListener('submit', async function(e){
+  e.preventDefault();
+  var msg=document.getElementById('formMsg'), btn=document.getElementById('submitBtn');
+  var name=document.getElementById('name').value.trim();
+  var phone=document.getElementById('phone').value.replace(/[^0-9]/g,'');
+  var consent=document.getElementById('consent').checked;
+  msg.className='msg';
+  if(!name){msg.className='msg err';msg.textContent='Please enter your full name.';return;}
+  if(phone.length<10){msg.className='msg err';msg.textContent='Please enter a valid 10-digit mobile number.';return;}
+  if(!consent){msg.className='msg err';msg.textContent='Please check the consent box to subscribe.';return;}
+  btn.disabled=true;btn.textContent='Submitting…';
+  try{
+    var r=await fetch('https://cclg-sms-optin.tom-b2e.workers.dev/submit',{method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({name:name,phone:phone,consent:true,consentText:document.querySelector('.consent label').textContent.trim(),page:location.href,ts:new Date().toISOString()})});
+    if(r.ok){msg.className='msg ok';msg.textContent='You\'re subscribed! You will receive a confirmation text shortly. Reply STOP at any time to opt out.';this.reset();}
+    else{throw new Error('bad status');}
+  }catch(err){msg.className='msg err';msg.textContent='Something went wrong. Please try again or call (877) 322-2992.';}
+  btn.disabled=false;btn.textContent='Subscribe to SMS Alerts';
+});
+</script>
+</body>
+</html>
